@@ -2,9 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Movie Box</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>
+    <header>
+        <div class="container-fluid ">
+            <div class="row ">
+                <nav class="navbar  navbar-default navbar-collapse my-navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand m_brand" href="#">
+                                MOVIE B <i class="icomoon icon-tv"></i> X
+                                <!--<img alt="Brand" src="...">-->
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <div class=" col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+            <div class="m_parent col-lg-12 col-md-12 col-sm-12 clearfix">
+                <ul class="nav nav-tabs m_tab" role="tablist">
+                    <li role="presentation" class="active "><a href="#t_signup" aria-controls="t_signup" role="tab" data-toggle="tab">Sign In</a></li>
+                    <li role="presentation" class="pull-right "><a href="#t_register" aria-controls="t_register" role="tab" data-toggle="tab">Register</a></li>
+                </ul>
+                <hr class="m_hr">
+
+                <div class="tab-content clearfix">
+                    <div role="tabpanel" class="tab-pane fade in active" id="t_signup">
+                        <form class="m_form" id="f_signup">
+                            <div class="form-group">
+                                <label for="email_1" class="m_label">Email Address</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon m_addon "><i class="m_addon fa fa-envelope-o"></i></span>
+                                    <input class="m_input form-control" type="email" id="email_1" placeholder="Enter your Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass_1" class="m_label">Password</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon  m_addon"><i class="fa fa-key m_addon"></i></span>
+                                    <input class="m_input form-control" type="password" id="pass_1" placeholder="Password">
+                                </div>
+                                <div class="checkbox input-sm">
+                                    <label><input type="checkbox">Remember Me</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-default m_button" type="button">Login</button>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="t_register">
+                        <form class="m_form" id="f_register">
+                            <div class="form-group">
+                                <label for="Signup_fname" class="m_label">First Name</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon  m_addon"><i class="fa fa-user m_addon"></i></span>
+                                    <input type="text" class="m_input form-control" id="Signup_fname" placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Signup_lname" class="m_label">Last Name</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon  m_addon"><i class="fa fa-user m_addon"></i></span>
+                                    <input type="text" class="m_input form-control clearfix" id="Signup_lname" placeholder="Last name">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Signup_email" class="m_label">Email address</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon m_addon "><i class="m_addon fa fa-envelope-o"></i></span>
+                                    <input type="email" class="m_input form-control" id="Signup_email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password1" class="m_label">Password</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon  m_addon"><i class="fa fa-key m_addon"></i></span>
+                                    <input type="password" class=" m_input form-control" id="password1" placeholder="Enter Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2" class="m_label">Re-Enter Password</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon  m_addon"><i class="fa fa-key m_addon"></i></span>
+                                    <input type="password" class=" m_input form-control" id="password2" placeholder="Re-Enter Password">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default m_button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-lg-12 col-sm-12 col-md-12 m_footer navbar-fixed-bottom ">
+            <span>&copy; Movie Box Inc.</span>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script   src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/74f7d221b0.js"></script>
 
 </body>
 </html>
+<!--<label for="uname" class="m_label">User Id</label> <input class="m_input"type="text" id="uname" placeholder="example:">-->
+<!--<label for="lname" class="m_label">Last Name</label> <input class="m_input" type="text" id="lname">-->
